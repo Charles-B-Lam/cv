@@ -1,0 +1,72 @@
+body {
+    /* By default there is an 8 px margin so we need to set it to 0  (on 90% of pages)*/
+   margin: 0;
+   text-align: center;
+   /* default font in the body section */
+   font-family: 'Merriweather', serif;
+}
+
+.topPage {
+    /* Change the background color of >=1 section: Completed */
+    background-color: #161616;
+
+    /* Added appropriate padding on >=1 div section: Completed */
+    padding-top: 50px;
+    padding-bottom: 400px;
+}
+
+h1.top {
+    /* 1st Custom Font */
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #BA0C2F;
+    font-size: 5em;
+}
+
+p.top {
+    /* 2nd Custom Font */
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    /* Set font size of >= 2 fonts: Completed */
+    font-size: 2em;
+    font-weight: 50;
+}
+
+p.smallText {
+    /* 2nd Custom Font */
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: 10;
+}
+
+/* 2nd Multi-column layout */
+.row {
+    /*background-color: aqua;*/
+    width: 20%;
+    margin: 50px auto;
+}
+
+.column {
+    display: inline-block;
+}
+
+.left {
+    /*background-color: blueviolet; */
+    float: left;
+    width: 35%;
+}
+
+/*don't have to float to the right because when floating left in .left it makes space automaticall for the column to go to the right side.*/
+.right {
+   /*background-color: cornflowerblue;*/
+    width: 65%;
+}
+
+.padding {
+    padding-bottom: 5px;
+}
+
+ul li{ /* this is an example of descendant selectors b/c all <li>'s are nested in an <ul> */
+    list-style-type: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="topPage">
+        <h1 class="top">Contact Charles</h1>
+        <p class="top">2555 S Milledge Ave, Apt 104A-C<br>
+        Athens, GA 30605</p>
+
+        <p class="top">478-456-2559</p>
+
+        <hr>
+
+        <!--method="POST"
+            Posting a message to a bulletin board, newsgroup, mailing list,
+            or similar group of articles;
+            Providing a block of data, such as the result of submitting a
+            form, to a data-handling process;-->
+        <form method="POST" action="mailto:cbl75839@uga.edu" enctype="multipart/form-data">
+            <div class="row">
+                <div class="column left">
+                    <ul>
+                        <li><p class="smallText padding">Name: </p></li>
+                        <li><p class="smallText padding">Email: </p></li>
+                        <li><p class="smallText padding">Message: </p></li>
+                    </ul>
+                </div>
+
+                <div class="column right">
+                    <ul>
+                        <li class="padding"><input type="text"><br></li>
+                        <li class="padding"><input type="email"><br></li>
+                        <li class="padding"><textarea rows="3" cols="20" name="comment"></textarea></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit"> <!--value is the string used as the button label-->
+                <br>
+        </form>
+    </div>
+</body>
+</html>

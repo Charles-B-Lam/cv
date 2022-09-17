@@ -1,0 +1,309 @@
+body {
+     /* By default there is an 8 px margin so we need to set it to 0  (on 90% of pages)*/
+    margin: 0;
+    text-align: center;
+    /* default font in the body section */
+    font-family: 'Merriweather', serif;
+}
+
+/* 1st SECTION */
+
+/* First div tag */
+.topPage {
+    position: relative;
+    /* Change the background color of >=1 section: Completed */
+    background-color: #161616;
+
+    /* Added appropriate padding on >=1 div section: Completed */
+    padding: 100px 0 150px 0;
+}
+
+h1.top {
+    /* 1st Custom Font */
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #BA0C2F;
+    font-size: 5em;
+}
+
+h2.top {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #BA0C2F;
+    /* Set font size of >= 2 fonts: Completed */
+    font-size: 3em;
+    font-weight: 500;
+}
+
+h3.top {
+    /* 2nd Custom Font */
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    /* Set font size of >= 2 fonts: Completed */
+    font-size: 2em;
+    font-weight: 50;
+}
+
+.ugaImage1{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    width: 25%;
+    height: 40%;
+}
+
+.ugaImage2{
+    position: absolute;
+    top: 440px;
+    left: 200px;
+    width: 13%;
+    height: 15%;
+}
+
+.ugaBan {
+    width: 50%;
+    height: 10%;
+}
+
+
+
+/* 2nd SECTION: MIDDLE */
+
+/* Second div tag */
+.middleHeading {
+    font-size: 5em;
+}
+
+.middle {
+    background-image: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #e95950, #fccc63, #bc2a8d); 
+    padding-bottom: 50px;
+ }
+ 
+.intro {
+    background-color: #8e9493;
+    background-image: url("../images_gen/me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.intro > h3 {
+    color: white;
+
+    /* Set font size */
+    font-size: 3em;
+}
+
+.intro > p {
+    color: white;
+
+    /* Set font size of >= 2 fonts : Completed */
+    font-size: 25px;
+}
+
+/* Changing the attribute of the anchor tag, link section */
+a:link {
+    /* Remove the underline for the anchor text of links: Completed */
+    text-decoration: none;
+    /* Set the color for the anchor text of links: Completed */
+    color: blue;
+}
+
+/* Underlines the link when the cursor is hovering over it. */
+a:hover {
+    text-decoration: underline;
+
+    /* will not work without important */
+    color: red !important;
+}
+
+/* Horizontal rule/line */
+hr {
+    border: groove #8a3ab9 8px;
+    border-bottom: none;
+    width: 70%;
+    margin: 100px auto 100px auto;
+}
+
+
+/* 1st Multi-column layout */
+/* Row section of the multi-column layout */
+.row {
+   /* background-color: aqua; */
+    width: 600px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+/* Column section of the multi-column layout */
+.column {
+    /* div are block elements so they go on their own line so each column would go on a separate line if we didn't set display to be inline-block.*/
+    /* by making it inline block, the column would be next to one another */
+    display: inline-block;
+    padding-top: 50px;
+}
+
+/* For the outer left column of the multi-column layout: holds the logo */
+.outer-left {
+    /* background-color: blueviolet; */
+    padding-top: 120px;
+    float: left;
+    width: 300px;
+}
+
+/* For the outer right column of the multi-column layout: holds all the languages */
+/* Don't have to float to the right because when floating left in .left it makes space automaticall for the column to go to the right side.*/
+.outer-right {
+   /*background-color: cornflowerblue; */
+   /*
+    background-image: url("../images_gen/instagram-template.png");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    */
+
+    /* IMPORTANT SO THAT THE INSTAGRAM TEMPLATE MOVES WITH THE OUTER RIGHT COLUMN when we set the position to absolute*/
+    position: relative;
+    width: 300px;
+}
+
+/* The inner left column */
+.inner-left {
+    float: left;
+    width: 150px;
+    
+}
+
+/* The inner right column */
+.inner-right {
+     width: 150px;
+}
+
+.instagram-logo {
+    /* gets 75% of the container (left hand column) */
+    padding-top: 10px;
+    width: 55%;
+    border: outset rgb(166, 0, 255) 8px;
+    border-radius: 40px;
+
+}
+
+.instagram-app-outline {
+    position: absolute;
+    width: 300px;
+    height: 460px;
+    left: 1px;
+    top: 20px;
+}
+
+.instagram-pics {
+    padding-right: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* 2nd Multi-column layout */
+.row2 {
+    /*background-color: aqua;*/
+    width: 65%;
+    margin: 50px auto;
+}
+
+.column2 {
+    display: inline-block;
+}
+
+.left2 {
+    /*background-color: blueviolet; */
+    float: right;
+    width: 35%;
+}
+
+/*don't have to float to the right because when floating left in .left it makes space automaticall for the column to go to the right side.*/
+.right2 {
+   /*background-color: cornflowerblue;*/
+    width: 65%;
+}
+
+
+/* Include this so the list items don't contain the bullet points beside each programming language. */
+ul li{ /* this is an example of descendant selectors b/c all <li>'s are nested in an <ul> */
+    list-style-type: none;
+}
+
+.leadershipImg {
+    padding-bottom: 5px;
+    width: 40%;
+    height: 40%;
+}
+
+
+/* 3rd Multi-column layout */
+.row3 {
+    /*background-color: aqua;*/
+    width: 70%;
+    margin: 50px auto;
+}
+
+.column3 {
+    display: inline-block;
+}
+
+.left3 {
+    /*background-color: blueviolet; */
+    float: left;
+    width: 35%;
+}
+
+/*don't have to float to the right because when floating left in .left it makes space automaticall for the column to go to the right side.*/
+.right3 {
+   /*background-color: cornflowerblue;*/
+    width: 65%;
+}
+
+
+/* Include this so the list items don't contain the bullet points beside each programming language. */
+ul li{ /* this is an example of descendant selectors b/c all <li>'s are nested in an <ul> */
+    list-style-type: none;
+}
+
+.skillsImg {
+    padding-top: 50px;
+    width: 60%;
+    height: 60%;
+}
+
+
+
+/* 3rd Bottom/Last Section */
+
+/* Third div tag */
+.bottom {
+    background-color: rgb(0, 110, 254);
+    height: 35px;
+    padding-top: 3px;
+}
+
+.contact-button {
+    border: inset rgb(0, 110, 254) 10px;
+    border-radius: 10px;
+    width: 20%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* to center the text */
+    margin: auto;
+}
+
+.item-spacing {
+    padding-bottom: 35px;
+}
+
+.item2-spacing {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
